@@ -1,44 +1,44 @@
-package Cluster;
+package Collections;
 
 public class Address {
-private String Line1;
-private String Line2;
-private String City;
-private String State;
-private String Zip;
+private String line1;
+private String line2;
+private String city;
+private String state;
+private String zip;
 public String getLine1() {
-	return Line1;
+	return line1;
 }
 public void setLine1(String line1) {
-	Line1 = line1;
+	line1 = line1;
 }
 public String getLine2() {
-	return Line2;
+	return line2;
 }
 public void setLine2(String line2) {
-	Line2 = line2;
+	line2 = line2;
 }
 public String getCity() {
-	return City;
+	return city;
 }
 public void setCity(String city) {
-	City = city;
+	city = city;
 }
 public String getState() {
-	return State;
+	return state;
 }
 public void setState(String state) {
-	State = state;
+	state = state;
 }
 public String getZip() {
-	return Zip;
+	return zip;
 }
 public void setZip(String zip) {
-	Zip = zip;
+	zip = zip;
 }
 @Override
 public String toString() {
-	return "Address [Line1=" + Line1 + ", Line2=" + Line2 + ", City=" + City + ", State=" + State + ", Zip=" + Zip
+	return "Address [Line1=" + line1 + ", Line2=" + line2 + ", City=" + city + ", State=" + state + ", Zip=" + zip
 			+ "]";
 }
 

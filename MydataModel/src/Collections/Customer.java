@@ -1,55 +1,53 @@
-package Cluster;
+package Collections;
 
 public class Customer {
 
-	private String Firstname;
-	private String Lastname;
-	private String Phonenumber;
-	private String Emailid;
-	private Address Address;
-	public String getFirstname() {
-		return Firstname;
+	private String firstName;
+	private String lastName;
+	private String phoneNumber;
+	private String emailid;
+	private Address address;
+
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setFirstname(String firstname) {
-		Firstname = firstname;
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	public String getLastname() {
-		return Lastname;
+
+	public String getLastName() {
+		return lastName;
 	}
-	public void setLastname(String lastname) {
-		Lastname = lastname;
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
-	public String getPhonenumber() {
-		return Phonenumber;
+
+	public String getPhoneNumber() {
+		return phoneNumber;
 	}
-	public void setPhonenumber(String phonenumber) {
-		Phonenumber = phonenumber;
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
+
 	public String getEmailid() {
-		return Emailid;
+		return emailid;
 	}
-	public void setEmailid(String emailid) {
-		Emailid = emailid;
-	}
-	public Address getAddress() {
-		return Address;
-	}
-	public void setAddress(Address address) {
-		Address = address;
-	}
-	@Override
-	public String toString() {
-		return "Customer [Firstname=" + Firstname + ", Lastname=" + Lastname + ", Phonenumber=" + Phonenumber
-				+ ", Emailid=" + Emailid + ", Address=" + Address + "]";
-	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((Firstname == null) ? 0 : Firstname.hashCode());
-		result = prime * result + ((Lastname == null) ? 0 : Lastname.hashCode());
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + ((emailid == null) ? 0 : emailid.hashCode());
+		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
+		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
+		result = prime * result + ((phoneNumber == null) ? 0 : phoneNumber.hashCode());
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -59,17 +57,44 @@ public class Customer {
 		if (getClass() != obj.getClass())
 			return false;
 		Customer other = (Customer) obj;
-		if (Firstname == null) {
-			if (other.Firstname != null)
+		if (address == null) {
+			if (other.address != null)
 				return false;
-		} else if (!Firstname.equals(other.Firstname))
+		} else if (!address.equals(other.address))
 			return false;
-		if (Lastname == null) {
-			if (other.Lastname != null)
+		if (emailid == null) {
+			if (other.emailid != null)
 				return false;
-		} else if (!Lastname.equals(other.Lastname))
+		} else if (!emailid.equals(other.emailid))
+			return false;
+		if (firstName == null) {
+			if (other.firstName != null)
+				return false;
+		} else if (!firstName.equals(other.firstName))
+			return false;
+		if (lastName == null) {
+			if (other.lastName != null)
+				return false;
+		} else if (!lastName.equals(other.lastName))
+			return false;
+		if (phoneNumber == null) {
+			if (other.phoneNumber != null)
+				return false;
+		} else if (!phoneNumber.equals(other.phoneNumber))
 			return false;
 		return true;
 	}
-	
+
+	public void setEmailid(String emailid) {
+		this.emailid = emailid;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
 }
