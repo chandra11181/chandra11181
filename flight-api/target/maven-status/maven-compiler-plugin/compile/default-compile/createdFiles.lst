@@ -1,0 +1,8 @@
+com\sekharair\services\model\FlightScheduleRequest.class
+com\sekharair\services\model\FlightReservation.class
+com\sekharair\services\api\FlightServiceController.class
+com\sekharair\services\model\FlightReservationResponse.class
+com\sekharair\services\api\FlightReservationController.class
+com\sekharair\services\model\FlightSchedule.class
+com\sekharair\services\model\FlightScheduleResponse.class
+com\sekharair\services\model\FlightReservationRequest.class

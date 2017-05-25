@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.sekharair.services.domain.FlightReservationDomain" table="Reservations">
+      <id name="reservationId" type="string" column="Reservation_ID">
+         <generator class="native"/>
+      </id>
+      <property name="passengerId" column="Passenger_ID" type="string"/>
+      <property name="passengerName" column="Passenger_Name" type="string"/>
+      <property name="dateOfBirth" column="Passenger_DOB" type="java.util.Date"/>
+      <property name="passengerAge" column="Passenger_Age" type="int"/>
+      <property name="bookingDate" column="Booking_date" type="java.util.Date"/>
+      <property name="travellingDate" column="Traveling_Date" type="java.util.Date"/>
+      <property name="originCode" column="Origin_Code" type="string"/>
+      <property name="destinationCode" column="Destination_code" type="string"/>
+     
+           
+   </class>
+</hibernate-mapping>

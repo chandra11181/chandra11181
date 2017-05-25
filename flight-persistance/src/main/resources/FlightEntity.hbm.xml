@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.sekharair.services.domain.FlightScheduleDomain" table="Flight_Schedule">
+      <id name="scheduleCode" type="string" column="schedule_code">
+         <generator class="native"/>
+      </id>
+      <property name="flightID" column="flight_id" type="string"/>
+      <property name="aircraftCode" column="aircraft_code" type="string"/>
+      <property name="originCode" column="origin_code" type="string"/>
+      <property name="destinationCode" column="destination_code" type="string"/>
+      <property name="departureTime" column="departure_time" type="java.util.Date"/>
+      <property name="arrivalTime" column="arrival_time" type="java.util.Date"/>
+           
+   </class>
+</hibernate-mapping>

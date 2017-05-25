@@ -1,0 +1,4 @@
+com\sekharair\services\dao\FlightReservationDao.class
+com\sekharair\services\dao\FlightScheduleDao.class
+com\sekharair\services\domain\FlightReservationDomain.class
+com\sekharair\services\domain\FlightScheduleDomain.class
